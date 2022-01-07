@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./index.css" />
+
+    <title>URL shortener</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="text__container">
+        <h2>Short your link.</h2>
+        <p>
+          Paste the link that you want to make it short, we will provide you
+          with the shorter version of your link that you can use anywhere.
+        </p>
+      </div>
+
+      <div class="error__msg">
+        <span id="error">You must paste a valid URL</span>
+      </div>
+
+      <form class="shortener__container">
+        <div class="back__color"></div>
+        <div class="input__container">
+          <input
+            type="text"
+            placeholder="place your link here"
+            id="shortener"
+          />
+          <button class="submit__btn" type="submit">short it!</button>
+        </div>
+      </form>
+
+      <div class="links__container">
+        <div class="link">
+          <span class="long__link">www.google.com</span>
+          <span class="short__link">http://zous/link/jt17uu</span>
+          <button class="copy__btn">copy</button>
+        </div>
+        <div class="link">
+          <span class="long__link">www.bye.com</span>
+          <span class="short__link">http://zous/link/jkh7uu</span>
+          <button class="copy__btn">copy</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
