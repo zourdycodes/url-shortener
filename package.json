@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint .",
+    "compile": "tsc"
   },
   "keywords": [],
   "author": "",
@@ -17,7 +18,6 @@
     "@typescript-eslint/parser": "^5.9.0",
     "eslint": "^8.6.0",
     "eslint-config-google": "^0.14.0",
-    "prettier": "^2.5.1",
-    "tsc": "^2.0.3"
+    "prettier": "^2.5.1"
   }
 }

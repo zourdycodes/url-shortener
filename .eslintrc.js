@@ -9,5 +9,9 @@ module.exports = {
     ecmaVersion: 13,
   },
   plugins: ['@typescript-eslint'],
-  rules: {},
+  rules: {
+    'space-before-function-paren': 'off',
+    'require-jsdoc': 'off',
+    'quote-props': 'off',
+  },
 };
