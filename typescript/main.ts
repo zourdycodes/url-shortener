@@ -10,7 +10,7 @@ interface Item {
   shortUrl: string;
 }
 
-export class ItemControl {
+class ItemControl {
   public id: number;
   public url: string;
   public shortUrl: string;
@@ -49,7 +49,7 @@ export class ItemControl {
 //  USER INTERFACE CONTROLLER
 // *************
 
-export class UIControl {
+class UIControl {
   public ui_selectors: {
     linkInput: string;
     shortBtn: string;
@@ -81,7 +81,7 @@ export class UIControl {
   }
 }
 
-export class App {
+class App {
   UIControl: UIControl;
   ItemControl: ItemControl;
 
@@ -97,11 +97,11 @@ export class App {
       ?.addEventListener('click', this.addLink);
   }
 
-  private addLink(e: Event) {
+  addLink(e: Event) {
     e.preventDefault();
     // get form input from UI Controller
-    const input = this.UIControl.getLinkInput().longLink.value;
-    console.log(input);
+    const input = this.UIControl.getLinkInput();
+    console.log(input.longLink.value);
   }
 
   init() {

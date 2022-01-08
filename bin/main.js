@@ -1,6 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.App = exports.UIControl = exports.ItemControl = void 0;
 class ItemControl {
     constructor(id, url, shortUrl) {
         this.id = id;
@@ -26,7 +23,6 @@ class ItemControl {
         return this.data;
     }
 }
-exports.ItemControl = ItemControl;
 class UIControl {
     constructor() {
         this.ui_selectors = {
@@ -46,7 +42,6 @@ class UIControl {
         };
     }
 }
-exports.UIControl = UIControl;
 class App {
     constructor(UIControl, ItemControl) {
         this.UIControl = UIControl;
@@ -60,14 +55,13 @@ class App {
     }
     addLink(e) {
         e.preventDefault();
-        const input = this.UIControl.getLinkInput().longLink.value;
-        console.log(input);
+        const input = this.UIControl.getLinkInput();
+        console.log(input.longLink.value);
     }
     init() {
         this.loadEventListeners();
     }
 }
-exports.App = App;
 const initializeApp = new App(new UIControl(), new ItemControl(666, 'ajdajd', 'asjajs'));
 initializeApp.init();
 //# sourceMappingURL=main.js.map

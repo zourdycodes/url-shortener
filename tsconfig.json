@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "es2017",
     "module": "commonjs",
-    "lib": ["dom", "ES6", "es2017"],
+    "lib": ["dom", "ES5"],
     "skipLibCheck": true,
     "sourceMap": true,
     "outDir": "./bin",
